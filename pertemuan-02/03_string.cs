@@ -1,7 +1,7 @@
 // string digunakan untuk menyimpan data berupa teks.
 
 string nama = "Ilham";
-string kota = "Bogor";
+string kota = "Tangerang";
 
 // Menampilkan isi variable
 Console.WriteLine($"Nama: {nama}");
