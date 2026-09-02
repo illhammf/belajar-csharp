@@ -1,7 +1,7 @@
 // double digunakan untuk menyimpan angka desimal.
 
-double tinggi = 170.5;
-double berat = 60.5;
+double tinggi = 165.0;
+double berat = 55.5;
 double harga = 15000.50;
 
 // Menampilkan data
