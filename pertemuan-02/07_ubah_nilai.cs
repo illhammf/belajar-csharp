@@ -6,7 +6,7 @@ int umur = 20;
 Console.WriteLine($"Umur awal : {umur}");
 
 // Mengubah nilai variable
-umur = 21;
+umur = 20;
 
 // Menampilkan nilai setelah diubah
 Console.WriteLine($"Umur baru : {umur}");
