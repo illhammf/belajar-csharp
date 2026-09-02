@@ -11,13 +11,13 @@ $FilePath = Join-Path $Root $File
 
 # Memastikan file ada
 if (-not (Test-Path $FilePath)) {
-    Write-Host "⚠️ File tidak ditemukan:" -ForegroundColor Red
+    Write-Host " ⚠️ File tidak ditemukan:" -ForegroundColor Red
     Write-Host $FilePath
     exit 1
 }
 
 # Menjalankan file C#
-Write-Host "File" $File "ditemukan di path:" -ForegroundColor Green
+Write-Host " 🔍 File" $File "ditemukan di path:" -ForegroundColor Green
 Write-Host $FilePath -ForegroundColor Green
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host " Menjalankan...: $File" -ForegroundColor Cyan
