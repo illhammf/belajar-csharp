@@ -25,3 +25,6 @@ Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
 
 dotnet run --file $FilePath
+
+# cara menjalankan script ini:
+.\run.ps1 
