@@ -27,4 +27,4 @@ Write-Host ""
 dotnet run --file $FilePath
 
 # cara menjalankan script ini:
-.\run.ps1...
+# .\run.ps1... (lokasi file C# relatif terhadap run.ps1)
