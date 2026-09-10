@@ -1,9 +1,13 @@
 // Membuat class Siswa
 class Siswa
 {
-    // Property siswa
+    // Property untuk menyimpan nama
     public string Nama { get; set; }
+
+    // Property untuk menyimpan kelas
     public string Kelas { get; set; }
+
+    // Property untuk menyimpan nilai
     public double Nilai { get; set; }
 
     // Constructor untuk mengisi data awal
@@ -14,7 +18,7 @@ class Siswa
         Nilai = nilai;
     }
 
-    // Method untuk mendapatkan status kelulusan
+    // Method untuk menentukan status kelulusan
     public string GetStatus()
     {
         if (Nilai >= 75)
@@ -25,7 +29,7 @@ class Siswa
         return "Tidak Lulus";
     }
 
-    // Method untuk menampilkan data
+    // Method untuk menampilkan data siswa
     public void TampilkanData()
     {
         Console.WriteLine("Nama   : " + Nama);
@@ -34,6 +38,11 @@ class Siswa
         Console.WriteLine("Status : " + GetStatus());
     }
 }
+
+
+// ==============================
+// PROGRAM UTAMA
+// ==============================
 
 // Meminta input nama
 Console.Write("Masukkan nama: ");
@@ -54,4 +63,5 @@ Siswa siswa = new Siswa(nama, kelas, nilai);
 Console.WriteLine();
 Console.WriteLine("=== DATA SISWA ===");
 
+// Memanggil method dari object
 siswa.TampilkanData();
