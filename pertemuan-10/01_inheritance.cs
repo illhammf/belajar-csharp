@@ -1,4 +1,17 @@
-// Parent class
+// Membuat object Kucing
+Kucing kucing = new Kucing();
+
+// Mengisi property dari parent class
+kucing.Nama = "Milo";
+
+// Memanggil method dari parent class
+kucing.Makan();
+
+
+// ==========================================
+// PARENT CLASS
+// ==========================================
+
 class Hewan
 {
     // Property milik parent class
@@ -11,16 +24,11 @@ class Hewan
     }
 }
 
-// Child class mewarisi Hewan
+
+// ==========================================
+// CHILD CLASS
+// ==========================================
+
 class Kucing : Hewan
 {
 }
-
-// Membuat object Kucing
-Kucing kucing = new Kucing();
-
-// Menggunakan property dari parent class
-kucing.Nama = "Milo";
-
-// Menggunakan method dari parent class
-kucing.Makan();
