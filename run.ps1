@@ -17,6 +17,7 @@ if (-not (Test-Path $FilePath)) {
 }
 
 # Menjalankan file C#
+Write-Host "======================== FILE DITEMUKAN =========================" -ForegroundColor Cyan
 Write-Host " 🔍 File" $File "ditemukan di path:" -ForegroundColor Green
 Write-Host $FilePath -ForegroundColor Green
 Write-Host "=================================================================" -ForegroundColor Cyan
