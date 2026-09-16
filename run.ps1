@@ -20,7 +20,7 @@ if (-not (Test-Path $FilePath)) {
 Write-Host " 🔍 File" $File "ditemukan di path:" -ForegroundColor Green
 Write-Host $FilePath -ForegroundColor Green
 Write-Host "=================================================================" -ForegroundColor Cyan
-Write-Host " Menjalankan...: $File" -ForegroundColor Cyan
+Write-Host " 📢 Menjalankan...: $File" -ForegroundColor Cyan
 Write-Host "=================================================================" -ForegroundColor Cyan
 Write-Host ""
 
