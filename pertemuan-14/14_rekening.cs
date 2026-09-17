@@ -38,26 +38,32 @@ class Rekening
 }
 
 // Program utama
-var rekening = new Rekening("Ilham", 500000);
-
-Console.WriteLine($"Nama: {rekening.Nama}");
-rekening.TampilkanSaldo();
-
-Console.Write("\nMasukkan jumlah penarikan: ");
-
-try
+class Program
 {
-    double jumlah = double.Parse(Console.ReadLine() ?? "");
+    static void Main()
+    {
+        var rekening = new Rekening("Ilham", 500000);
 
-    rekening.Tarik(jumlah);
+        Console.WriteLine($"Nama: {rekening.Nama}");
+        rekening.TampilkanSaldo();
 
-    rekening.TampilkanSaldo();
-}
-catch (FormatException)
-{
-    Console.WriteLine("Jumlah harus berupa angka.");
-}
-catch (Exception ex)
-{
-    Console.WriteLine($"Transaksi gagal: {ex.Message}");
+        Console.Write("\nMasukkan jumlah penarikan: ");
+
+        try
+        {
+            double jumlah = double.Parse(Console.ReadLine() ?? "");
+
+            rekening.Tarik(jumlah);
+
+            rekening.TampilkanSaldo();
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Jumlah harus berupa angka.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Transaksi gagal: {ex.Message}");
+        }
+    }
 }
