@@ -30,48 +30,54 @@ class Mahasiswa
 }
 
 // Program utama
-Console.WriteLine("=== Input Data Mahasiswa ===");
-
-try
+class Program
 {
-    // Input nama
-    Console.Write("Nama mahasiswa: ");
-    string nama = Console.ReadLine() ?? "";
-
-    // Validasi nama
-    if (string.IsNullOrWhiteSpace(nama))
+    static void Main()
     {
-        throw new Exception("Nama tidak boleh kosong.");
+        Console.WriteLine("=== Input Data Mahasiswa ===");
+
+        try
+        {
+            // Input nama
+            Console.Write("Nama mahasiswa: ");
+            string nama = Console.ReadLine() ?? "";
+
+            // Validasi nama
+            if (string.IsNullOrWhiteSpace(nama))
+            {
+                throw new Exception("Nama tidak boleh kosong.");
+            }
+
+            // Input nilai
+            Console.Write("Nilai mahasiswa: ");
+            int nilai = int.Parse(Console.ReadLine() ?? "");
+
+            // Validasi nilai
+            if (nilai < 0 || nilai > 100)
+            {
+                throw new Exception("Nilai harus berada di antara 0 sampai 100.");
+            }
+
+            // Membuat object mahasiswa
+            var mahasiswa = new Mahasiswa(nama, nilai);
+
+            // Menampilkan data
+            mahasiswa.TampilkanData();
+        }
+        catch (FormatException)
+        {
+            // Jika nilai bukan angka
+            Console.WriteLine("Nilai harus berupa angka.");
+        }
+        catch (Exception ex)
+        {
+            // Menangani error lainnya
+            Console.WriteLine($"Error: {ex.Message}");
+        }
+        finally
+        {
+            // Selalu dijalankan
+            Console.WriteLine("\nProgram selesai.");
+        }
     }
-
-    // Input nilai
-    Console.Write("Nilai mahasiswa: ");
-    int nilai = int.Parse(Console.ReadLine() ?? "");
-
-    // Validasi nilai
-    if (nilai < 0 || nilai > 100)
-    {
-        throw new Exception("Nilai harus berada di antara 0 sampai 100.");
-    }
-
-    // Membuat object mahasiswa
-    var mahasiswa = new Mahasiswa(nama, nilai);
-
-    // Menampilkan data
-    mahasiswa.TampilkanData();
-}
-catch (FormatException)
-{
-    // Jika nilai bukan angka
-    Console.WriteLine("Nilai harus berupa angka.");
-}
-catch (Exception ex)
-{
-    // Menangani error lainnya
-    Console.WriteLine($"Error: {ex.Message}");
-}
-finally
-{
-    // Selalu dijalankan
-    Console.WriteLine("\nProgram selesai.");
 }
