@@ -657,8 +657,8 @@ Namun, proses belajar C# tentunya belum berhenti di sini.
 
 **Ilham Firmansyah**
 
-Repository ini dibuat sebagai dokumentasi dan catatan perjalanan belajar bahasa pemrograman C#.
+Repository ini dibuat sebagai dokumentasi dan catatan perjalanan belajar bahasa pemrograman C# dan mengisi waktu luang selama libur semester 4, Repository selesai pada tanggal 19 September 2026 pukul 10:34 WIB, Kabupaten Tangerang, Banten, Indonesia.
 
 ---
 
-⭐ Jika repository ini bermanfaat, jangan lupa untuk memberikan **Star**.
+⭐ Jika repository ini bermanfaat, jangan lupa untuk memberikan **Bintang**.
