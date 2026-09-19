@@ -7,10 +7,11 @@ using System.Linq;
 List<Mahasiswa> mahasiswa = new List<Mahasiswa>
 {
     new Mahasiswa("Ilham", 90),
-    new Mahasiswa("Budi", 55),
-    new Mahasiswa("Andi", 80),
-    new Mahasiswa("Rizky", 70),
-    new Mahasiswa("Fajar", 65)
+    new Mahasiswa("Luqman", 55),
+    new Mahasiswa("Adit", 80),
+    new Mahasiswa("Dafa", 70),
+    new Mahasiswa("Farel", 65),
+    new Mahasiswa("Tupen", 40)
 };
 
 // ========================================
