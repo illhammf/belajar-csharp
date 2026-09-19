@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+
+title: "Belajar C#"
+
+message: "If you use this repository for learning, teaching, research, or other work, please cite it using the information below."
+
+type: software
+
+authors:
+  - family-names: "Firmansyah"
+    given-names: "Ilham"
+    orcid: ""
+
+repository-code: "https://github.com/illhammf/belajar-csharp"
+
+url: "https://github.com/illhammf/belajar-csharp"
+
+license: "MIT"
+
+abstract: >
+  A beginner-friendly C# learning repository covering C# fundamentals,
+  Object-Oriented Programming, Exception Handling, Collections, and LINQ
+  through 16 structured learning sessions with examples, exercises,
+  and simple case studies.
+
+keywords:
+  - C#
+  - C-Sharp
+  - CSharp
+  - .NET
+  - Programming
+  - Object-Oriented Programming
+  - OOP
+  - Collections
+  - LINQ
+  - Exception Handling
+  - Programming Basics
+  - Beginner Programming
+
+version: "1.0.0"
+
+date-released: 2026-09-19
